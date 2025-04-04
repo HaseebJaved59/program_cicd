@@ -48,11 +48,11 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/program-cicd:latest .
+          docker build -t ghcr.io/haseebjaved59/program_cicd/program-cicd:latest .
 
       - name: Push Docker image to GitHub Container Registry
         run: |
-          docker push ghcr.io/${{ github.repository }}/program-cicd:latest
+          docker push ghcr.io/haseebjaved59/program_cicd/program-cicd:latest
 
   deploy:
     runs-on: ubuntu-latest
